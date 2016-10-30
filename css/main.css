@@ -2,7 +2,9 @@ h1, h2, h3 ,p ,ul ,li, a{
 	margin: 0;
 }
 
-
+.clearfix {
+	clear: both;
+}
 
 a {
 	color: black;
@@ -14,7 +16,8 @@ a:hover {
 
 #header {
 	z-index: 100;
-	background-color: #6ffffc;
+	background-color: #6FFFFC;
+	background-image: url(http://demo.syakirurohman.net/template/elrumi/assets/img/bg.png);
 	margin-bottom: -50px;
 	position: fixed;
 	width: 100%;
@@ -39,6 +42,7 @@ nav a:hover {
 
 .sm_nav {
 	display: none;
+	margin-right: 0;
 }
 
 .sm_nav a:hover {
@@ -81,11 +85,14 @@ nav a:hover {
 
 
 
-section .h_1 {
+.h_1 {
 	background-color: #6FFFFC;
+	background-image: url(http://demo.syakirurohman.net/template/elrumi/assets/img/bg.png);
 }
 
-section h1 {
+
+
+.h_1 h1 {
 	margin: 100px 0;
 	padding: 0 10%;
 	line-height: 100px;
@@ -93,9 +100,6 @@ section h1 {
 	font-family: Raleway;
 	font-weight: bold;
 	letter-spacing: 2px;
-}
-
-.h_1 h1 {
 	font-size: 6vw;
 }
 
@@ -130,8 +134,8 @@ section h1 {
 }
 
 .sm_nav_bar {
-	width: 55%;
-	margin: 0 auto 30px auto;
+	width: 88%;
+	margin: 0 auto 70px auto;
 }
 
 .sm_nav_bar button {
@@ -141,15 +145,50 @@ section h1 {
 
 
 .img_pro img {
-	display: block;
+	width: 88%;
 	margin: 0 auto;
 	margin-bottom: 20px;
-
+	clear: both;
 }
 
-.img_pro img:hover {
-
+.focus:hover {
+	opacity: 1;
 }
+
+.focus {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70vw;
+	background-color: #000000;
+}	
+
+.focus h3 {
+	color: #ffffff;
+	font-size: 4.5vw;
+	margin-top: 60px;
+	padding-bottom: 40px;
+}
+
+.focus p {
+	color: #ffffff;
+	font-size: 2.5vw;
+	padding-bottom: 15%;
+	font-style:italic;
+}
+
+.focus a {
+	color: #ffffff;
+	font-size: 3vw;
+	line-height: 60px;
+}
+
+.focus a:hover {
+	color: #6FFFFC;
+}
+
 
 .read_more {
 	margin: 20px auto 100px auto;
@@ -184,7 +223,7 @@ section h1 {
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 	.md_nav {
 		display: block;
 	}
@@ -200,5 +239,37 @@ section h1 {
 	.sm_nav_bar {
 		display: none;
 	}
+
+	
+	.img_pro img {
+		width: 27vw;
+	}
+
+	.focus {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20vw;
+	}
+
+	.focus h3 {
+		margin-top: 40px;
+		padding-bottom: 20px;
+		font-size: 1.8vw;
+		
+	}
+
+	.focus p {
+		font-size: 1.3vw;
+		padding-bottom: 10px;
+	}
+
+	.focus a {
+		font-size: 1.5vw;
+		line-height: 60px;
+	}
+
+
 }
 
